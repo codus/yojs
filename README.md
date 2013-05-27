@@ -42,6 +42,7 @@ var json = cJS.get("cjs_test.ns2.n3.my_json");
 
 Namespace lookup:
 
+```javascript
 cJS.define("my.deep.namespace.teste", function() {
   cJS.call("itworks");
 });
@@ -49,3 +50,4 @@ cJS.define("my.deep.namespace.teste", function() {
 cJS.define("my.deep.namespace.itworks", function() {
   console.log("yay");
 });
+```
