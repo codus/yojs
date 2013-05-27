@@ -1,4 +1,4 @@
-// git@github.com:codus/cjs.git
+// git@github.com:codus/yojs.git
 // Version: 0.0.1
 
 if(!Array.prototype.last) {
@@ -7,7 +7,7 @@ if(!Array.prototype.last) {
   }
 }
 
-var cJS = (function(){
+var yojs = (function(){
   var nameFunctionHash = {};
   var parentsNamespaces = [];
 
