@@ -50,4 +50,6 @@ cJS.define("my.deep.namespace.teste", function() {
 cJS.define("my.deep.namespace.itworks", function() {
   console.log("yay");
 });
+
+cJS.call("my.deep.namespace.teste") // -> yay
 ```
