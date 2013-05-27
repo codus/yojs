@@ -1,4 +1,4 @@
-Codus
+yojs
 =====
 
 Javascript library for declaring and calling functions and variables using namespaces.
