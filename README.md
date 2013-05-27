@@ -39,3 +39,13 @@ Retrieve stored object and values:
 var value = cJS.get("cjs_test.my_value");
 var json = cJS.get("cjs_test.ns2.n3.my_json");
 ```
+
+Namespace lookup:
+
+cJS.define("my.deep.namespace.teste", function() {
+  cJS.call("itworks");
+});
+
+cJS.define("my.deep.namespace.itworks", function() {
+  console.log("yay");
+});
