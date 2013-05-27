@@ -9,11 +9,11 @@ Usage
 Function definition: 
 
 ```javascript
-cJS.define("cjs_test", function() {
+yojs.define("yojs_test", function() {
   //your code goes here
 });
 
-cJS.define("cjs_test.comments.new", function() {
+yojs.define("yojs_test.comments.new", function() {
   //your code goes here
 });
 ```
@@ -21,35 +21,35 @@ cJS.define("cjs_test.comments.new", function() {
 Function call:
 
 ```javascript
-cJS.call("cjs_test");
+yojs.call("yojs_test");
 
-cJS.call("cjs_test.comments.new");
+yojs.call("yojs_test.comments.new");
 ```
 
 Store objects and values:
 
 ```javascript
-cJS.set("cjs_test.my_value", 42);
-cJS.set("cjs_test.ns2.n3.my_json", { foo: "bar"} );
+yojs.set("yojs_test.my_value", 42);
+yojs.set("yojs_test.ns2.n3.my_json", { foo: "bar"} );
 ```
 
 Retrieve stored object and values:
 
 ```javascript
-var value = cJS.get("cjs_test.my_value");
-var json = cJS.get("cjs_test.ns2.n3.my_json");
+var value = yojs.get("yojs_test.my_value");
+var json = yojs.get("yojs_test.ns2.n3.my_json");
 ```
 
 Namespace lookup:
 
 ```javascript
-cJS.define("my.deep.namespace.teste", function() {
-  cJS.call("itworks");
+yojs.define("my.deep.namespace.teste", function() {
+  yojs.call("itworks");
 });
 
-cJS.define("my.deep.namespace.itworks", function() {
+yojs.define("my.deep.namespace.itworks", function() {
   console.log("yay");
 });
 
-cJS.call("my.deep.namespace.teste") // -> yay
+yojs.call("my.deep.namespace.teste") // -> yay
 ```
