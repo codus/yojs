@@ -30,7 +30,7 @@ var yojs = (function(){
     },
 
     set: function(namespace, value) {
-      this.define(namespace, value);
+      nameFunctionHash[namespace] = value;
     },
 
     call: function(namespace){
