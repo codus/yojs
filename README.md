@@ -40,6 +40,13 @@ var value = yojs.get("yojs_test.my_value");
 var json = yojs.get("yojs_test.ns2.n3.my_json");
 ```
 
+Check if something is defined:
+
+```javascript
+yojs.isDefined("yojs_test.ns1.ns2.var");
+yojs.isDefined("yojs_test.ns1.ns2.function");
+```
+
 Namespace lookup:
 
 ```javascript
